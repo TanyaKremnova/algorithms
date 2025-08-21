@@ -323,10 +323,64 @@ ___
 
 ___
 
-# 📘 8.Dynamic Programming
+# 📘 8. Optimization Algorithms
 
-- Breaks problems into subproblems and solves each once, storing solutions.
+- Find the best (optimal) solution among many possible solutions, often by minimizing or maximizing a certain value (e.g., cost, distance, profit).
 
-- Examples: Longest Common Subsequence, 0-1 Knapsack Problem.
+## Greedy Algorithms
 
-- Use case: Optimization problems, resource allocation.
+**Idea:**
+Make the locally optimal choice at each step, hoping it leads to the global optimum.
+
+**When it works:**
+- The problem has the **Greedy Choice Property** (local optimum → global optimum).
+- The problem has **Optimal Substructure** (solution can be built from solutions of subproblems).
+
+**When it fails:**
+- When local choices don’t guarantee the global best solution (e.g., Coin Change for certain denominations).
+
+**Common Examples:**
+- **Activity Selection:** Choose max number of non-overlapping activities.
+- **Coin Change (Greedy):** Minimum coins for an amount (only works for specific denominations).
+- **Fractional Knapsack:** Take items with highest value/weight ratio first.
+- **Huffman Coding:** Build optimal prefix code for compression.
+- **Dijkstra’s Algorithm:** Shortest path from a source (also a graph algorithm).
+- **Prim’s Algorithm:** Minimum Spanning Tree in graphs.
+
+## Dynamic Programming
+
+- Break the problem into overlapping subproblems and store results to avoid recomputation.
+
+**When to use:**
+
+ - Problems with **Optimal Substructure** and **Overlapping Subproblems**.
+ - Examples:
+
+  - **0/1 Knapsack:** Choose items to maximize value without exceeding weight.
+  - **Longest Common Subsequence (LCS).**
+  - **Matrix Chain Multiplication.**
+  - **Fibonacci (optimized).**
+
+## Backtracking
+
+**What:**
+Try all possibilities but prune paths that cannot lead to a solution.
+
+**When to use:**
+Constraint-based problems: Sudoku, N-Queens, permutations, word search.
+
+## Branch and Bound
+
+**What:**
+Improved backtracking that uses bounds to cut off unnecessary branches.
+
+**When to use:**
+Combinatorial optimization: Traveling Salesman Problem (TSP), Job Scheduling.
+
+## 4. Approximation Algorithms
+
+**What:**
+Give near-optimal solutions for NP-hard problems when exact solutions are expensive.
+
+**When to use:**
+Problems like TSP, Vertex Cover, Set Cover.
