@@ -167,6 +167,20 @@ void insertion_sort(int *arr, int size)
 ___
 
 # 📘 3. Recursion Basics
+- Solve complex problems by breaking them into smaller subproblems and calling the same function on smaller inputs until reaching a base case.
+
+- **Common Types:**
+
+  - Direct Recursion: Function calls itself directly.
+  - Indirect Recursion: Function A calls Function B, which calls A again.
+  - Tail Recursion: Recursive call is the last statement (can be optimized).
+
+- **Use Cases:**
+
+  - Mathematical calculations: Factorial, Fibonacci, GCD.
+  - Divide & Conquer algorithms: Merge Sort, Quick Sort.
+  - Tree and graph traversal: DFS, backtracking problems.
+  - Dynamic programming: Breaking down overlapping subproblems.
 
 ## Factorial
 
@@ -268,10 +282,9 @@ int is_palindrome(char *s)
 	return (1);
 }
 ```
-
 ___
 
-# Tree Algorithms
+# 📘 5.Tree Algorithms
 
 - Operate on hierarchical data structures.
 
@@ -285,7 +298,7 @@ ___
 
 ___
 
-# Graph Algorithms
+# 📘 6.Graph Algorithms
 
 - Solve problems related to graph theory, such as finding shortest paths or spanning trees.
 
@@ -298,7 +311,7 @@ ___
 
 ___
 
-# Depth-First Search (DFS) & Breadth-First Search (BFS)
+# 📘 7.Depth-First Search (DFS) & Breadth-First Search (BFS)
 
 - Algorithms for traversing or searching trees or graphs.
 
@@ -310,7 +323,7 @@ ___
 
 ___
 
-# Dynamic Programming
+# 📘 8.Dynamic Programming
 
 - Breaks problems into subproblems and solves each once, storing solutions.
 
